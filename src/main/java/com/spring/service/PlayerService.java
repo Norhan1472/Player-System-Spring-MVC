@@ -7,4 +7,6 @@ import com.spring.model.Player;
 public interface PlayerService {
 
 	public List<Player>getPlayers();
+	
+	public void addPlayer(Player player);
 }

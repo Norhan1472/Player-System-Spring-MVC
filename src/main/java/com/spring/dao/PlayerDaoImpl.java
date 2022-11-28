@@ -34,4 +34,12 @@ public class PlayerDaoImpl implements PlayerDao {
 	  
 	}
 
+
+	@Override
+	public void savePlayer(Player palyer) {
+		// TODO Auto-generated method stub
+		Session session = sessionFactory.getCurrentSession();
+		session.saveOrUpdate(palyer);
+	}
+
 }

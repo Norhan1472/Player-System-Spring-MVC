@@ -29,4 +29,13 @@ public class PlayerServiceImpl implements PlayerService {
 		return playerDao.getAllPlayers();
 	}
 
+
+	@Override
+	@Transactional
+	public void addPlayer(Player player) {
+		// TODO Auto-generated method stub
+		playerDao.savePlayer(player);
+		
+	}
+
 }

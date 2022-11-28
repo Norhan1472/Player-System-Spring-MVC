@@ -9,5 +9,5 @@ import com.spring.model.Player;
 public interface PlayerDao {
 	
 	public List<Player>getAllPlayers();
-
+	public void savePlayer(Player palyer);
 }
