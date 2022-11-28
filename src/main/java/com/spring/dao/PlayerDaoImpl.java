@@ -42,4 +42,12 @@ public class PlayerDaoImpl implements PlayerDao {
 		session.saveOrUpdate(palyer);
 	}
 
+
+	@Override
+	public Player updatePlayer(long id) {
+		Session session = sessionFactory.getCurrentSession();
+		
+		return session.get(Player.class,id);
+	}
+
 }

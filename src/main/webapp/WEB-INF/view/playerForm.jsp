@@ -23,10 +23,12 @@
 <form:form modelAttribute="player" action="addPlayer">
 
   <div class="form-row">
-  
+       <form:hidden path="id"/>
+	      
 	    <div class="form-group col-md-6">
-	      <label>Number</label>
+	      <label>Name</label>
 	      <form:input type="text" path="name" class="form-control" placeholder="name"/>
+	      
 	    </div>
 	    
 	    <div class="form-group col-md-6">
@@ -38,6 +40,7 @@
 	    <div class="form-group col-md-12">
 	      <label >Address</label>
 	      <form:input type="text" path="address" class="form-control" placeholder="Address"/>
+	      
 	    </div>
 	    
 	      <div class="form-group col-md-12">

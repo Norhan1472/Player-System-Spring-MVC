@@ -10,4 +10,5 @@ public interface PlayerDao {
 	
 	public List<Player>getAllPlayers();
 	public void savePlayer(Player palyer);
+	public Player updatePlayer(long id);
 }

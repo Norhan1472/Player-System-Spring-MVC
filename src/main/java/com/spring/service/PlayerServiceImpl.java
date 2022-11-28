@@ -34,8 +34,18 @@ public class PlayerServiceImpl implements PlayerService {
 	@Transactional
 	public void addPlayer(Player player) {
 		// TODO Auto-generated method stub
+		System.out.println(player.getName());
 		playerDao.savePlayer(player);
 		
+	}
+
+
+	@Override
+	@Transactional
+	public Player EditPlayer(long id) {
+		// TODO Auto-generated method stub
+		
+		return playerDao.updatePlayer(id);
 	}
 
 }

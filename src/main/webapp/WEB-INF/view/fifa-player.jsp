@@ -30,7 +30,10 @@
       <td>${player.address}</td>
       <td>${player.phone}</td>
       <td>
-      <button type="button" class="btn btn-primary">Edit</button>
+      <c:url var="editData" value="/fifa/updatePlayer">
+      <c:param name="playerId" value="${player.id}"></c:param>
+      </c:url>
+      <a href="${editData}" type="button" class="btn btn-primary">Edit</a>
       <button type="button" class="btn btn-danger">Delete</button>
       </td>
     </tr>
