@@ -17,9 +17,13 @@ public class Player {
 	@Id
 	@Column(name="player_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private long id;
 	
 	@Column(name="player_name")
+
+	@NotNull(message="required")
+	@NotBlank(message="required")
 	private String name;
 	
 	@Column(name="player_number")

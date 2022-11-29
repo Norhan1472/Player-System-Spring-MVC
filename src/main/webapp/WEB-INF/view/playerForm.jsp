@@ -15,6 +15,9 @@
 		margin: 20px;
 		padding: 10px;
 	}
+	.error{
+	color:red;
+	}
 </style>
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -28,7 +31,7 @@
 	    <div class="form-group col-md-6">
 	      <label>Name</label>
 	      <form:input type="text" path="name" class="form-control" placeholder="name"/>
-	      
+	      <form:errors path="name" cssClass="error"></form:errors>
 	    </div>
 	    
 	    <div class="form-group col-md-6">
